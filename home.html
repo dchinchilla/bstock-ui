@@ -4,76 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B-Stock UI</title>
-    
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/AdminLTE.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/skin-blue.min.css">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="shortcut icon" href="img/favicon.ico">
   </head>
-	<body>
-		<aside></aside>
-		<main>
-			<h3>Create Similar Item</h3>
-			<div class="ui column center aligned">
-				<a href="#" class="large ui primary">
-					Create Similar
-					<i class="right clone icon"></i>
-				</a>
-			</div>
-			
-			<h3 style="margin-bottom: 4rem;"">Create Similar Item Modal Elements</h3>
-			<div class="ui grid container">
-				<div class="four wide column">
-					<div class="ui small image">
-						<img src="img/placeholder.png">
-					  </div>
-				</div><!-- IMAGE COLUMN -->
-				
-				<div class="twelve wide column">
-					<div class="ui row margin-b1">
-						<h4>Product Title</h4>
-					</div><!--ROW-->
-					<div class="ui row margin-b2">
-						<div class="ui labeled input large disabled fluid">	
-							<div class="ui label">Similar to:</div>
-							<input type="text" value="Magic Spring Rainbow Toy 8.5cm, 2 Pack" placeholder="Product Title">
-						</div><!-- UI INPUT-->
-					</div><!--ROW-->
-
-					<div class="ui two column grid">
-						<div class="ui column eight">
-							<div class="ui row margin-b1">
-								<h4>Retail Price</h4>
-							</div><!--ROW-->
-							<div class="ui row">
-								<div class="ui labeled input large disabled fluid">	
-									<div class="ui label">$</div>
-									<input type="number" value="22.60" placeholder="0.00">
-								</div><!-- UI INPUT-->
-							</div><!--ROW-->
-						</div><!-- COL 8-->
-						<div class="ui column eight">
-							<div class="ui row margin-b1">
-								<h4>Quantity</h4>
-							</div><!--ROW-->
-							<div class="ui row">
-								<div class="ui input large fluid">	
-									<input type="number" value="4" placeholder="0">
-								</div><!-- UI INPUT-->
-							</div><!--ROW-->
-						</div><!-- COL 8-->
-					</div><!-- SUB GRID-->
-
-
-				</div><!-- TWELVE COL-->
-			  </div><!-- GRID CONTAINER-->
-
-			
-		</main>
-	
-		
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	crossorigin="anonymous"></script>
-	<script src="semantic/dist/semantic.min.js"></script>
-	</body>
+  <body>
+    <header class="main-header-mob ui grid vertically padded mobile only">
+      <div class="column six wide"></div>
+      <div class="column four wide center aligned"><span class="ui white" href="#">B-STOCK APP</span></div>
+      <div class="column six wide">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu"><a class="ui dropdown" role="listbox" aria-expanded="true"><i class="user icon"></i>
+              <div class="left menu transition">
+                <div class="disabled item" style="pointer-events:all" role="option" aria-disabled="true" aria-checked="false" aria-selected="false"><span class="text">Signed in as <strong>Grocery User</strong></span></div>
+                <div class="selected item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="true"><span class="text">Integrations</span></div>
+                <div class="item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="false"><span class="text">Help</span></div>
+                <div class="item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="false"><span class="text">Settings</span></div>
+                <div class="item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="false"><span class="text">Sign Out</span></div>
+              </div></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="ui grid fluid two column padded stackable" id="main-wrapper">
+      <aside class="ui column wide">
+        <h3>BS Radio Labels</h3>
+        <p>Estos son unos falsos-radio buttons. El input está escondido, sólo el Label es visible. By Default, clickear un label selecciona el radio button. Qué tan complicado es que hagamos el checked status by swapping una class al label?</p>
+        <form action="">
+          <div class="bs radio-labels">
+            <div class="radio-label-item">
+              <input type="radio" id="rl2" name="demo" value="dva">
+              <label class="ui small button fluid" for="rl2"><span class="title">Small</span><span class="detail">$149.99</span></label>
+            </div>
+            <div class="radio-label-item">
+              <input type="radio" id="rl3" name="demo" value="dva" checked>
+              <label class="ui small button fluid blue" for="rl3"><span class="title">Extra Large</span><span class="detail">$2900.99</span></label>
+            </div>
+          </div>
+        </form>
+      </aside>
+      <main class="ui column wide">
+        <div class="ui grid container">
+          <div class="four wide column">
+            <div class="ui small image"><img src="img/placeholder.png"></div>
+          </div>
+          <div class="twelve wide column">
+            <div class="ui row margin-b1">
+              <h4>Product Title</h4>
+            </div>
+            <div class="ui row margin-b2">
+              <div class="ui labeled input large disabled fluid">
+                <div class="ui label">Similar to:</div>
+                <input type="text" value="Magic Spring Rainbow Toy 8.5cm, 2 Pack" placeholder="Product Title">
+              </div>
+              <div class="ui two column grid">
+                <div class="ui column eight">
+                  <div class="ui row margin-b1">
+                    <h4>Retail Price</h4>
+                  </div>
+                  <div class="ui row">
+                    <div class="ui labeled input large disabled fluid">
+                      <div class="ui label">$</div>
+                      <input type="number" value="22.60" placeholder="0.00">
+                    </div>
+                  </div>
+                </div>
+                <div class="ui column eight">
+                  <div class="ui row margin-b1">
+                    <h4>Quantity</h4>
+                  </div>
+                  <div class="ui row">
+                    <div class="ui input large fluid">
+                      <input type="number" value="4" placeholder="0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
 </html>

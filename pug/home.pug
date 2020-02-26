@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title B-Stock UI
+		link(rel='stylesheet', type='text/css', href='semantic/dist/semantic.min.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/AdminLTE.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/skin-blue.min.css')
+		link(rel='icon', type='image/png', href='img/favicon-32x32.png', sizes='32x32')
+		link(rel='shortcut icon', href='img/favicon.ico')
+	body
+		header.main-header-mob.ui.grid.vertically.padded.mobile.only
+			.column.six.wide
+			.column.four.wide.center.aligned
+				span.ui.white(href="#") B-STOCK APP
+			.column.six.wide
+				ul.nav.navbar-nav
+					li.dropdown.user.user-menu
+						a.ui.dropdown(role="listbox" aria-expanded="true")
+							i.user.icon
+							.left.menu.transition
+								.disabled.item(style='pointer-events:all', role='option', aria-disabled='true', aria-checked='false', aria-selected='false')
+									span.text
+										| Signed in as 
+										strong Grocery User
+								.selected.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='true')
+									span.text Integrations
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Help
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Settings
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Sign Out
+			
+		#main-wrapper.ui.grid.fluid.two.column.padded.stackable
+
+			aside.ui.column.wide
+				h3 BS Radio Labels
+				p Estos son unos falsos-radio buttons. El input está escondido, sólo el Label es visible. By Default, clickear un label selecciona el radio button. Qué tan complicado es que hagamos el checked status by swapping una class al label?
+
+				form(action="")
+					.bs.radio-labels
+						.radio-label-item
+							input(type='radio', id='rl2' name='demo', value='dva')
+							label.ui.small.button.fluid(for='rl2')
+								span.title Small
+								span.detail $149.99
+						.radio-label-item
+							input(type='radio', id='rl3' name='demo', value='dva' checked)
+							label.ui.small.button.fluid.blue(for='rl3')
+								span.title Extra Large
+								span.detail $2900.99
+					
+
+
+			main.ui.column.wide
+
+				.ui.grid.container
+					.four.wide.column
+						.ui.small.image
+							img(src='img/placeholder.png')
+					
+					.twelve.wide.column
+						.ui.row.margin-b1
+							h4 Product Title
+						
+						.ui.row.margin-b2
+							.ui.labeled.input.large.disabled.fluid
+								.ui.label Similar to:
+								input(type='text', value='Magic Spring Rainbow Toy 8.5cm, 2 Pack', placeholder='Product Title')
+							
+							.ui.two.column.grid
+								.ui.column.eight
+									.ui.row.margin-b1
+										h4 Retail Price
+									.ui.row
+										.ui.labeled.input.large.disabled.fluid
+											.ui.label $
+											input(type='number', value='22.60', placeholder='0.00')
+										
+								.ui.column.eight
+									.ui.row.margin-b1
+										h4 Quantity
+									
+									.ui.row
+										.ui.input.large.fluid
+											input(type='number', value='4', placeholder='0')
+	script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+	script(src='semantic/dist/semantic.min.js')

@@ -209,6 +209,8 @@ input::selection {
 
 // BSTOCK CUSTOM STYLES
 
+// Helpers
+
 .margin-r-half {
 	margin-right: 0.5rem;
 }
@@ -308,4 +310,56 @@ input::selection {
 
 .padd-l3 {
 	padding-left: 3rem;
+}
+
+// PAGE ELEMENTS
+
+body {
+  background-color: #ECF0F5;
+}
+
+.main-header-mob {
+  background-color: #3c8dbc;
+  color: white;
+
+  ul.nav.navbar-nav {
+    margin: 0;
+    list-style: none;
+    li > a {
+      color: white;
+    }
+  }
+}
+
+// CUSTOM ELEMENTS
+
+.bs.radio-labels {
+  .radio-label-item {
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+
+
+      .detail {
+        background-color: rgba(0, 0, 0, 0.10);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 0.6rem;
+      }
+     }
+  }
 }
