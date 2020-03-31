@@ -1,0 +1,116 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title B-Stock UI
+		link(rel='stylesheet', type='text/css', href='semantic/dist/semantic.min.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/ben.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/AdminLTE.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/skin-blue.min.css')
+		link(rel='icon', type='image/png', href='img/favicon-32x32.png', sizes='32x32')
+		link(rel='shortcut icon', href='img/favicon.ico')
+	body
+		header.main-header-mob.ui.grid.vertically.padded.mobile.only
+			.column.six.wide
+			.column.four.wide.center.aligned
+				span.ui.white(href="#") B-STOCK APP
+			.column.six.wide
+				ul.nav.navbar-nav
+					li.dropdown.user.user-menu
+						a.ui.dropdown(role="listbox" aria-expanded="true")
+							i.user.icon
+							.left.menu.transition
+								.disabled.item(style='pointer-events:all', role='option', aria-disabled='true', aria-checked='false', aria-selected='false')
+									span.text
+										| Signed in as 
+										strong Grocery User
+								.selected.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='true')
+									span.text Integrations
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Help
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Settings
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Sign Out
+		main.ui.grid.padded
+			aside.ui.three.wide.column.computer.only(style="background: #222D32; height: 100vh;")
+			#main-wrapper.ui.twelve.wide.computer.sixteen.wide.tablet.column
+				.search-results-feed
+					.ui.items
+						.product.item.ui.two.column.grid
+							.thumb-and-info.column
+								.image
+									.thumb.ui.raised.segment
+										.ui.ribbon.label.WM
+										img.ui.small.centered.image(src="img/charmin.jpeg", alt="")
+									.create-similar.ui.sixteen.wide.row.centered.grid.padded
+										a(href="#")
+											i.icon.clone 
+											| Create Similar
+								.content
+									a.header(href="#" target="_blank") Soft & Strong Toilet Paper - Mega Rolls - Up&Up™
+									.meta: span.ui.grey Up&Up
+									.description.line-clamp
+										p Offering both softness and strength, the Soft & Strong Toilet Paper Mega Rolls from up & up™ are a pack of premium two-ply toilet paper rolls designed to 
+									.extra
+										.ui.tiny.label.basic.grey UPC: 071547000099
+										.ui.tiny.label.basic.grey Size: Standard
+										.ui.tiny.label.basic.grey Color: Black
+										.ui.tiny.label.basic.red TCIN: 071547000099
+										.ui.tiny.label.basic.red DCPI: 129381561723
+							.pricing-and-actions.ui.two.column.grid
+								.variants-and-price.ui.column
+									.variants.ui.column
+										.ui.sixteen.wide.row
+											.ui.fluid.selection.dropdown
+												span.default.text Choose Size
+												i.dropdown.icon
+												.menu
+													.item
+														i.attention.right.floated.icon
+														|       Important
+													.item
+														i.comment.right.floated.icon
+														|       Announcement
+													.item
+														i.conversation.right.floated.icon
+														|       Discussion
+
+										.ui.sixteen.wide.row
+											.ui.fluid.selection.dropdown
+												span.default.text Choose Color
+												i.dropdown.icon
+												.menu
+													.item
+														i.attention.right.floated.icon
+														|       Important
+													.item
+														i.comment.right.floated.icon
+														|       Announcement
+													.item
+														i.conversation.right.floated.icon
+														|       Discussion
+										.ui.row.mobile.only
+											.ui.mini.statistic
+												.value
+													i.dollar.sign.tiny.icon
+													strong 49.99 RETAIL	
+
+									.price.ui.column.computer.only
+										.ui.tiny.statistic
+											.value
+												i.dollar.sign.tiny.icon
+												| 49.99
+											.label Retail
+								
+								.actions.column
+									button.ui.primary.button
+										| Choose
+										i.right.chevron.icon
+
+
+			
+	
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+	script(src='semantic/dist/semantic.min.js')

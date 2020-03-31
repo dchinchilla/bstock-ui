@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B-Stock UI</title>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/ben.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/AdminLTE.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/skin-blue.min.css">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
@@ -27,66 +28,138 @@
         </ul>
       </div>
     </header>
-    <div class="ui grid fluid two column padded stackable" id="main-wrapper">
-      <aside class="ui column wide">
-        <h3>BS Radio Labels</h3>
-        <p>Estos son unos falsos-radio buttons. El input está escondido, sólo el Label es visible. By Default, clickear un label selecciona el radio button. Qué tan complicado es que hagamos el checked status by swapping una class al label?</p>
-        <form action="">
-          <div class="bs radio-labels">
-            <div class="radio-label-item">
-              <input type="radio" id="rl2" name="demo" value="dva">
-              <label class="ui small button fluid" for="rl2"><span class="title">Small</span><span class="detail">$149.99</span></label>
-            </div>
-            <div class="radio-label-item">
-              <input type="radio" id="rl3" name="demo" value="dva" checked>
-              <label class="ui small button fluid blue" for="rl3"><span class="title">Extra Large</span><span class="detail">$2900.99</span></label>
-            </div>
-          </div>
-        </form>
-      </aside>
-      <main class="ui column wide">
-        <div class="ui grid container">
-          <div class="four wide column">
-            <div class="ui small image"><img src="img/placeholder.png"></div>
-          </div>
-          <div class="twelve wide column">
-            <div class="ui row margin-b1">
-              <h4>Product Title</h4>
-            </div>
-            <div class="ui row margin-b2">
-              <div class="ui labeled input large disabled fluid">
-                <div class="ui label">Similar to:</div>
-                <input type="text" value="Magic Spring Rainbow Toy 8.5cm, 2 Pack" placeholder="Product Title">
-              </div>
-              <div class="ui two column grid">
-                <div class="ui column eight">
-                  <div class="ui row margin-b1">
-                    <h4>Retail Price</h4>
+    <main class="ui grid padded">
+      <aside class="ui three wide column computer only" style="background: #222D32; height: 100vh;"></aside>
+      <div class="ui thirteen wide computer sixteen wide tablet column" id="main-wrapper">
+        <div class="search-results-feed ui sixteen wide row grid padded">
+          <div class="ui items sixteen wide row">
+            <div class="product item ui grid"> 
+              <div class="thumb-and-info ui grid sixteen wide mobile ten wide tablet ten wide computer column padded">
+                <div class="image">
+                  <div class="thumb ui raised segment">
+                    <div class="ui ribbon label WM"></div><img class="ui small centered image" src="img/scott.jpg" alt="">
                   </div>
-                  <div class="ui row">
-                    <div class="ui labeled input large disabled fluid">
-                      <div class="ui label">$</div>
-                      <input type="number" value="22.60" placeholder="0.00">
+                  <div class="create-similar ui sixteen wide row centered grid padded"><a href="#"><i class="icon clone"> </i>Create Similar</a></div>
+                </div>
+                <div class="content"><a class="header" href="#" target="_blank"> <strong>Scott 1000 Septic Safe Toilet Paper</strong></a>
+                  <div class="meta"><span class="ui grey">Scott</span></div>
+                  <div class="description ui grid padded">
+                    <div class="sixteen wide row tablet only computer only">
+                      <p class="line-clamp">Don't let spills and messes get in your way. Lock in confidence with Bounty, the Quicker Picker Upper. This pack contains Bounty Quick Size paper towels that </p>
+                    </div>
+                  </div>
+                  <div class="extra">
+                    <div class="ui tiny label basic grey">UPC: 071547000099</div>
+                    <div class="ui tiny label basic grey">Size: Standard</div>
+                    <div class="ui tiny label basic grey">Color: Black</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-and-actions ui grid sixteen wide mobile six wide tablet six wide computer column padded">
+                <div class="variants ui nine wide mobile eight wide tablet nine wide computer column column grid">
+                  <div class="variants-selectors ui sixteen wide mobile sixteen wide tablet sixteen wide computer column grid">
+                    <div class="ui sixteen wide row">
+                      <label>Size </label>
+                      <div class="ui fluid selection dropdown"><span class="default text">Choose Size</span><i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item"><i class="attention right floated icon"></i>      Important</div>
+                          <div class="item"><i class="comment right floated icon"></i>      Announcement</div>
+                          <div class="item"><i class="conversation right floated icon"></i>      Discussion</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui sixteen wide row">
+                      <label>Color</label>
+                      <div class="ui fluid selection dropdown"><span class="default text">Choose Color</span><i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item"><i class="attention right floated icon"></i>      Important</div>
+                          <div class="item"><i class="comment right floated icon"></i>      Announcement</div>
+                          <div class="item"><i class="conversation right floated icon"></i>      Discussion</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="ui column eight">
-                  <div class="ui row margin-b1">
-                    <h4>Quantity</h4>
-                  </div>
-                  <div class="ui row">
-                    <div class="ui input large fluid">
-                      <input type="number" value="4" placeholder="0">
+                <div class="actions-and-price ui six wide mobile eight wide tablet seven wide computer column grid">
+                  <div class="price ui sixteen wide row centered">
+                    <div class="ui tiny statistic">
+                      <div class="value"><i class="dollar sign tiny icon"></i>80.99</div>
+                      <div class="label">Retail</div>
                     </div>
+                  </div>
+                  <div class="choose ui sixteen wide row centered">
+                    <button class="ui primary button">Choose<i class="right chevron icon"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product item ui grid"> 
+              <div class="thumb-and-info ui grid sixteen wide mobile ten wide tablet ten wide computer column padded">
+                <div class="image">
+                  <div class="thumb ui raised segment">
+                    <div class="ui ribbon label TG"></div><img class="ui small centered image" src="img/charmin.jpeg" alt="">
+                  </div>
+                  <div class="create-similar ui sixteen wide row centered grid padded"><a href="#"><i class="icon clone"> </i>Create Similar</a></div>
+                </div>
+                <div class="content"><a class="header" href="#" target="_blank"> <strong>Soft & Strong Toilet Paper - Mega Rolls - Up&Up™</strong></a>
+                  <div class="meta"><span class="ui grey">Up&Up</span></div>
+                  <div class="description ui grid padded">
+                    <div class="sixteen wide row tablet only computer only">
+                      <p class="line-clamp">Offering both softness and strength, the Soft & Strong Toilet Paper Mega Rolls from up & up™ are a pack of premium two-ply toilet paper rolls designed to </p>
+                    </div>
+                  </div>
+                  <div class="extra">
+                    <div class="ui tiny label basic grey">UPC: 071547000099</div>
+                    <div class="ui tiny label basic grey">Size: Standard</div>
+                    <div class="ui tiny label basic grey">Color: Black</div>
+                    <div class="ui tiny label basic red">TCIN: 071547000099</div>
+                    <div class="ui tiny label basic red">DCPI: 129381561723</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-and-actions ui grid sixteen wide mobile six wide tablet six wide computer column padded">
+                <div class="variants ui nine wide mobile eight wide tablet nine wide computer column column grid">
+                  <div class="variants-selectors ui sixteen wide mobile sixteen wide tablet sixteen wide computer column grid">
+                    <div class="ui sixteen wide row">
+                      <label>Size </label>
+                      <div class="ui fluid selection dropdown"><span class="default text">Choose Size</span><i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item"><i class="attention right floated icon"></i>      Important</div>
+                          <div class="item"><i class="comment right floated icon"></i>      Announcement</div>
+                          <div class="item"><i class="conversation right floated icon"></i>      Discussion</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui sixteen wide row">
+                      <label>Color</label>
+                      <div class="ui fluid selection dropdown"><span class="default text">Choose Color</span><i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item"><i class="attention right floated icon"></i>      Important</div>
+                          <div class="item"><i class="comment right floated icon"></i>      Announcement</div>
+                          <div class="item"><i class="conversation right floated icon"></i>      Discussion</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="actions-and-price ui six wide mobile eight wide tablet seven wide computer column grid">
+                  <div class="price ui sixteen wide row centered">
+                    <div class="ui tiny statistic">
+                      <div class="value"><i class="dollar sign tiny icon"></i>349.99</div>
+                      <div class="label">Retail</div>
+                    </div>
+                  </div>
+                  <div class="alerts ui sixteen wide row centered">
+                    <div class="ui red message">Please Scan Destination Pallet</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="semantic/dist/semantic.min.js"></script>
 </html>
