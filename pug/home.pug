@@ -36,6 +36,116 @@ html(lang='en')
 		main.ui.grid.padded
 			aside.ui.three.wide.column.computer.only(style="background: #222D32; height: 100vh;")
 			#main-wrapper.ui.thirteen.wide.computer.sixteen.wide.tablet.column
+				.other
+					a.ui.button.primary Modal
+					.ui.dimmer.modals.page.transition.visible.active
+						.ui.modal.active
+							i.close.icon
+							.header
+								| Edit Status
+							.ui.content
+								.ui.grid.padded
+									.pallet-list.eight.wide.mobile.eight.wide.tablet.column.scroll-me
+										.ui.header.red Invalid Pallets (2)
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item.invalid-pallet(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content.red XLM-F2891
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item.invalid-pallet(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content.red PDM-12397
+
+										.ui.header Selected Pallets (9)
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content TRGTL-PRGM1
+
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content PDM-12397
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content KML-2186
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content LMX-19770
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content P1FM-12093
+										.ui.card
+											.content
+												.description
+													.ui.divided.relaxed.list(role='list')
+														.item(role='listitem')
+															i.pallet.icon(aria-hidden='true')
+															.content YRG-12370
+									
+									.eight.wide.mobile.eight.wide.tablet.column
+										.ui.form
+											.field
+												label Pallet Status
+												.ui.selection.dropdown
+													input(type='hidden', name='c')
+													.default.text Choose Status
+													i.dropdown.icon
+												.ui.red.message You can't void pallets with inventory.
+											
+											.ui.field
+												.ui.red.button.right.labeled.icon
+													| Remove Invalid
+													i.close.icon
+
+											.field
+												label Update Reason
+												.ui.selection.dropdown
+													input(type='hidden', name='c')
+													.default.text Choose Reason
+													i.dropdown.icon
+											
+											.field
+												label Explanation
+												.ui.input
+													input(type='text', name='', placeholder='Explain why...')
+
+												
+										
+
+							.actions
+								.ui.button.right.labeled.icon
+									| Cancel
+									i.close.icon
+								.ui.positive.right.labeled.icon.button.disabled
+									| Save
+									i.checkmark.icon
+
+
 				.search-results-feed.ui.sixteen.wide.row.grid.padded
 					.ui.items.sixteen.wide.row
 						.product.item.ui.grid 

@@ -31,6 +31,141 @@
     <main class="ui grid padded">
       <aside class="ui three wide column computer only" style="background: #222D32; height: 100vh;"></aside>
       <div class="ui thirteen wide computer sixteen wide tablet column" id="main-wrapper">
+        <div class="other"><a class="ui button primary">Modal</a>
+          <div class="ui dimmer modals page transition visible active">
+            <div class="ui modal active"><i class="close icon"></i>
+              <div class="header">Edit Status</div>
+              <div class="ui content">
+                <div class="ui grid padded">
+                  <div class="pallet-list eight wide mobile eight wide tablet column scroll-me">
+                    <div class="ui header red">Invalid Pallets (2)</div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item invalid-pallet" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content red">XLM-F2891</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item invalid-pallet" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content red">PDM-12397</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui header">Selected Pallets (9)</div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content">TRGTL-PRGM1</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content">PDM-12397</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content">KML-2186</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content">LMX-19770</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content">P1FM-12093</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui card">
+                      <div class="content">
+                        <div class="description">
+                          <div class="ui divided relaxed list" role="list">
+                            <div class="item" role="listitem"><i class="pallet icon" aria-hidden="true"></i>
+                              <div class="content">YRG-12370</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="eight wide mobile eight wide tablet column">
+                    <div class="ui form">
+                      <div class="field">
+                        <label>Pallet Status</label>
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="c">
+                          <div class="default text">Choose Status</div><i class="dropdown icon"></i>
+                        </div>
+                        <div class="ui red message">You can't void pallets with inventory.</div>
+                      </div>
+                      <div class="ui field">
+                        <div class="ui red button right labeled icon">Remove Invalid<i class="close icon"></i></div>
+                      </div>
+                      <div class="field">
+                        <label>Update Reason</label>
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="c">
+                          <div class="default text">Choose Reason</div><i class="dropdown icon"></i>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label>Explanation</label>
+                        <div class="ui input">
+                          <input type="text" name="" placeholder="Explain why...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="actions">
+                <div class="ui button right labeled icon">Cancel<i class="close icon"></i></div>
+                <div class="ui positive right labeled icon button disabled">Save<i class="checkmark icon"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="search-results-feed ui sixteen wide row grid padded">
           <div class="ui items sixteen wide row">
             <div class="product item ui grid"> 
