@@ -37,15 +37,42 @@ html(lang='en')
 			aside.ui.three.wide.column.computer.only(style="background: #222D32; height: 100vh;")
 			#main-wrapper.ui.thirteen.wide.computer.sixteen.wide.tablet.column
 				.other
-					a.ui.button.primary Modal
-					.ui.dimmer.modals.page.transition.visible.active
-						.ui.modal.active
+					button.trigger.ui.button.primary Open Modal :D 
+					.ui.dimmer.modals.page.transition
+						.ui.small.modal
 							i.close.icon
 							.header
 								| Edit Status
 							.ui.content
-								.ui.grid.padded
-									.pallet-list.eight.wide.mobile.eight.wide.tablet.column.scroll-me
+								.ui.stackable.grid.padded
+									.selected-pallets.eight.wide.mobile.eight.wide.tablet.eleven.wide.computer.column
+										.ui.form
+											.field
+												label Change Pallet Status to
+												.ui.selection.dropdown
+													input(type='hidden', name='c')
+													.default.text Choose Status
+													i.dropdown.icon
+												.ui.red.message You can't void pallets with inventory.
+											
+											.ui.field
+												.ui.red.button.right.labeled.icon
+													| Remove Invalid
+													i.close.icon
+
+											.field
+												label Update Reason
+												.ui.selection.dropdown
+													input(type='hidden', name='c')
+													.default.text Choose Reason
+													i.dropdown.icon
+											
+											.field
+												label Explanation
+												.ui.input
+													input(type='text', name='', placeholder='Explain why...')
+									
+									.pallet-list.sixteen.wide.mobile.eight.wide.tablet.five.wide.computer.column.scroll-me.thin-scroll
 										.ui.header.red Invalid Pallets (2)
 										.ui.card
 											.content
@@ -106,34 +133,6 @@ html(lang='en')
 														.item(role='listitem')
 															i.pallet.icon(aria-hidden='true')
 															.content YRG-12370
-									
-									.eight.wide.mobile.eight.wide.tablet.column
-										.ui.form
-											.field
-												label Pallet Status
-												.ui.selection.dropdown
-													input(type='hidden', name='c')
-													.default.text Choose Status
-													i.dropdown.icon
-												.ui.red.message You can't void pallets with inventory.
-											
-											.ui.field
-												.ui.red.button.right.labeled.icon
-													| Remove Invalid
-													i.close.icon
-
-											.field
-												label Update Reason
-												.ui.selection.dropdown
-													input(type='hidden', name='c')
-													.default.text Choose Reason
-													i.dropdown.icon
-											
-											.field
-												label Explanation
-												.ui.input
-													input(type='text', name='', placeholder='Explain why...')
-
 												
 										
 
@@ -290,5 +289,14 @@ html(lang='en')
 
 			
 	
+		
 	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
 	script(src='semantic/dist/semantic.min.js')
+	script(type='text/javascript').
+		$(document).ready(function(){
+			$('.trigger').click(function(){
+				$('.ui.modal')
+					.modal('show')
+				;
+			});
+		});

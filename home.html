@@ -31,13 +31,42 @@
     <main class="ui grid padded">
       <aside class="ui three wide column computer only" style="background: #222D32; height: 100vh;"></aside>
       <div class="ui thirteen wide computer sixteen wide tablet column" id="main-wrapper">
-        <div class="other"><a class="ui button primary">Modal</a>
-          <div class="ui dimmer modals page transition visible active">
-            <div class="ui modal active"><i class="close icon"></i>
+        <div class="other">
+          <button class="trigger ui button primary">Open Modal :D </button>
+          <div class="ui dimmer modals page transition">
+            <div class="ui small modal"><i class="close icon"></i>
               <div class="header">Edit Status</div>
               <div class="ui content">
-                <div class="ui grid padded">
-                  <div class="pallet-list eight wide mobile eight wide tablet column scroll-me">
+                <div class="ui stackable grid padded">
+                  <div class="selected-pallets eight wide mobile eight wide tablet eleven wide computer column">
+                    <div class="ui form">
+                      <div class="field">
+                        <label>Change Pallet Status to</label>
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="c">
+                          <div class="default text">Choose Status</div><i class="dropdown icon"></i>
+                        </div>
+                        <div class="ui red message">You can't void pallets with inventory.</div>
+                      </div>
+                      <div class="ui field">
+                        <div class="ui red button right labeled icon">Remove Invalid<i class="close icon"></i></div>
+                      </div>
+                      <div class="field">
+                        <label>Update Reason</label>
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="c">
+                          <div class="default text">Choose Reason</div><i class="dropdown icon"></i>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label>Explanation</label>
+                        <div class="ui input">
+                          <input type="text" name="" placeholder="Explain why...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pallet-list sixteen wide mobile eight wide tablet five wide computer column scroll-me thin-scroll">
                     <div class="ui header red">Invalid Pallets (2)</div>
                     <div class="ui card">
                       <div class="content">
@@ -125,34 +154,6 @@
                               <div class="content">YRG-12370</div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="eight wide mobile eight wide tablet column">
-                    <div class="ui form">
-                      <div class="field">
-                        <label>Pallet Status</label>
-                        <div class="ui selection dropdown">
-                          <input type="hidden" name="c">
-                          <div class="default text">Choose Status</div><i class="dropdown icon"></i>
-                        </div>
-                        <div class="ui red message">You can't void pallets with inventory.</div>
-                      </div>
-                      <div class="ui field">
-                        <div class="ui red button right labeled icon">Remove Invalid<i class="close icon"></i></div>
-                      </div>
-                      <div class="field">
-                        <label>Update Reason</label>
-                        <div class="ui selection dropdown">
-                          <input type="hidden" name="c">
-                          <div class="default text">Choose Reason</div><i class="dropdown icon"></i>
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label>Explanation</label>
-                        <div class="ui input">
-                          <input type="text" name="" placeholder="Explain why...">
                         </div>
                       </div>
                     </div>
@@ -297,4 +298,13 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="semantic/dist/semantic.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    	$('.trigger').click(function(){
+    		$('.ui.modal')
+    			.modal('show')
+    		;
+    	});
+    });
+  </script>
 </html>

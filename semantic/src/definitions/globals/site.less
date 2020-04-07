@@ -434,13 +434,23 @@ body {
 
 .pallet-list {
   .ui.card {
-    height: 44px !important;
+    // height: 44px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 
-    >.description {
-      padding: 0 !important;
+   
+    >.content {
+      // padding: 0 1em;
+      min-height: initial;
+
+      >.description {
+        padding: 0 !important;
+      }
+
     }
+    
+    
+    
   }
 
   .invalid-pallet {
@@ -451,4 +461,8 @@ body {
 
 .scroll-me {
   overflow-y: scroll;
+}
+
+.thin-scroll::-webkit-scrollbar {
+    width: 6px;
 }
