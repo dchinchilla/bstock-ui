@@ -25,14 +25,6 @@
 		"oAP": "/home.html",
 		"oF": 0
 		},
-	"/home2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home2.html",
-		"oF": 0
-		},
 	"/img/charmin.jpeg": {
 		"ft": 16384,
 		"iS": 52770,
@@ -77,6 +69,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/orders-new.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/orders-new.html",
+		"oF": 0
+		},
 	"/pug/home.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -87,21 +87,13 @@
 		"oF": 3,
 		"oS": 0
 		},
-	"/pug/home2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/pug/home2.html",
-		"oF": 0
-		},
-	"/pug/home2.pug": {
+	"/pug/orders-new.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/home2.html",
+		"oAP": "/orders-new.html",
 		"oF": 2,
 		"oS": 0
 		},
@@ -161,6 +153,26 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/semantic/dist/ben-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/bootstrap.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/bootstrap.min-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/bootstrap.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1524,6 +1536,436 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/semantic/dist/fa/all-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/all-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/all.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/all-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/all.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/all.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/brands.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/brands-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/brands.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/brands.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/fa-brands-400.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-brands-400.eot",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-brands-400.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/semantic/dist/fa/fa-brands-400.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/semantic/dist/fa/fa-brands-400.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-brands-400.ttf",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-brands-400.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-brands-400.woff",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-brands-400.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-brands-400.woff2",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-regular-400.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-regular-400.eot",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-regular-400.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/semantic/dist/fa/fa-regular-400.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/semantic/dist/fa/fa-regular-400.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-regular-400.ttf",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-regular-400.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-regular-400.woff",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-regular-400.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-regular-400.woff2",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-solid-900.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-solid-900.eot",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-solid-900.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/semantic/dist/fa/fa-solid-900.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/semantic/dist/fa/fa-solid-900.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-solid-900.ttf",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-solid-900.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-solid-900.woff",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fa-solid-900.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fa-solid-900.woff2",
+		"oF": 0
+		},
+	"/semantic/dist/fa/fontawesome.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fontawesome-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/fontawesome.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/fontawesome.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/js/all.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/all-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/all.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/all.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/brands.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/brands-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/brands.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/brands.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/conflict-detection.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/conflict-detection-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/conflict-detection.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/conflict-detection.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/fontawesome.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/fontawesome-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/fontawesome.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/fontawesome.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/regular.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/regular-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/regular.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/regular.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/solid.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/solid-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/solid.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/solid.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/v4-shims.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/v4-shims-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/js/v4-shims.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/js/v4-shims.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/semantic/dist/fa/regular.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/regular-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/regular.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/regular.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/solid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/solid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/solid.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/solid.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/svg-with-js.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/svg-with-js-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/svg-with-js.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/svg-with-js.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/v4-shims.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/v4-shims-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/fa/v4-shims.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/fa/v4-shims.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/semantic/dist/semantic.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1832,6 +2274,26 @@
 		"oA": 1,
 		"oAP": "/semantic/dist/themes/material/assets/fonts/icons.woff2",
 		"oF": 1
+		},
+	"/semantic/dist/xy-grid-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/xy-grid-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/semantic/dist/xy-grid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/semantic/dist/xy-grid-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/semantic/gulpfile.js": {
 		"bF": 0,

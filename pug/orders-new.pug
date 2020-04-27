@@ -1,0 +1,239 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title B-Stock UI
+		//- link(rel='stylesheet', type='text/css', href='semantic/dist/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/fa/all.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/skin-blue.min.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/AdminLTE.css')
+		
+		link(rel='stylesheet', type='text/css', href='semantic/dist/semantic.min.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/xy-grid.css')
+		link(rel='stylesheet', type='text/css', href='semantic/dist/ben.css')
+		
+		
+	body
+		header.main-header-mob.ui.grid.vertically.padded.mobile.only
+			.column.six.wide
+			.column.four.wide.center.aligned
+				span.ui.white(href="#") B-STOCK APP
+			.column.six.wide
+				ul.nav.navbar-nav
+					li.dropdown.user.user-menu
+						a.ui.dropdown(role="listbox" aria-expanded="true")
+							i.user.icon
+							.left.menu.transition
+								.disabled.item(style='pointer-events:all', role='option', aria-disabled='true', aria-checked='false', aria-selected='false')
+									span.text
+										| Signed in as 
+										strong Grocery User
+								.selected.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='true')
+									span.text Integrations
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Help
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Settings
+								.item(style='pointer-events:all', role='option', aria-checked='false', aria-selected='false')
+									span.text Sign Out
+		.grid-x
+			.aside.cell.shrink.hide-for-small-only
+				.b-sidebar
+					h2 Sidebar
+			main.cell.auto(style="background: #ecf0f5;")
+				.content
+					//- .section
+					//- 	ol.breadcrumb.pull-left
+					//- 		li
+					//- 			a(href='/')
+					//- 				i.fas.fa-layer-group
+					//- 		li.active New Order
+					section.new-orders.grid-x
+						.order-summary.cell.small-12.medium-12.large-shrink
+							h2.margin-b2 New Order
+							.ui.form
+								.field.error
+									label Order Type
+									.ui.large.search.dropdown.selection
+										select
+											option(value='') State
+										i.dropdown.icon
+										input.search(autocomplete='off', tabindex='0')
+										.text Transfer Order
+										.menu.transition.hidden(tabindex='-1')
+											.item.active.selected(data-value='') Transfer Order
+								.field
+									label Customer
+									.ui.large.search.dropdown.selection
+										select
+											option(value='') State
+										i.dropdown.icon
+										input.search(autocomplete='off', tabindex='0')
+										.text Acme Wholesale
+										.menu.transition.hidden(tabindex='-1')
+											.item.active.selected(data-value='') Transfer Order
+								.field
+									a(href="#") 
+										i.fas.fa-plus-circle
+										|  Create Customer
+								.field
+									label Customer PO #
+									input(placeholder='123456', type='text')
+								.field
+									label Terms
+									.ui.large.search.dropdown.selection
+										select
+											option(value='') Custom
+										i.dropdown.icon
+										input.search(autocomplete='off', tabindex='0')
+										.text Custom
+										.menu.transition.hidden(tabindex='-1')
+											.item.active.selected(data-value='') 12 Days
+									
+									.custom-terms.grid-x.field.align-middle
+										.cell.auto.align-middle
+											label Custom Term Days
+										.cell.shrink
+											input.custom-terms-input(type='number', placeholder='1' width="48")
+									.field
+										label Invoice Date
+										.ui.left.icon.input
+											input(type='text', placeholder='Choose Date...')
+											i.calendar.icon
+									.field
+										label Due Date
+										.ui.left.icon.input
+											input(type='text', placeholder='Choose Date...')
+											i.calendar.icon
+
+
+						.order-content.cell.small-12.medium-12.large-auto.grid-x.grid-padding-x
+							.cell.small-12.medium-12.large-6
+								.billing.ui.form
+									.field
+										h4 Billing Address
+									.field
+										.ui.input
+											input(type='text', placeholder='Billing Name')
+									.field
+										.ui.input
+											input(type='text', placeholder='Street and Number')
+									.field
+										.ui.input
+											input(type='text', placeholder='Apartment, suite, building, floor, etc.')
+									.two.fields
+										.field
+											.ui.input
+												input(type='text', placeholder='Country')
+										.field
+											.ui.input
+												input(type='text', placeholder='State/Province')
+									.two.fields
+										.field
+											.ui.input
+												input(type='text', placeholder='City/Town')
+										.field
+											.ui.input
+												input(type='text', placeholder='Zip/Postal Code')
+
+
+							.cell.small-12.medium-12.large-6
+								.billing.ui.form
+									.field
+										h4 Shipping Address
+									.field
+										.ui.input
+											input(type='text', placeholder='Shipping Name')
+									.field
+										.ui.input
+											input(type='text', placeholder='Street and Number')
+									.field
+										.ui.input
+											input(type='text', placeholder='Apartment, suite, building, floor, etc.')
+									.two.fields
+										.field
+											.ui.input
+												input(type='text', placeholder='Country')
+										.field
+											.ui.input
+												input(type='text', placeholder='State/Province')
+									.two.fields
+										.field
+											.ui.input
+												input(type='text', placeholder='City/Town')
+										.field
+											.ui.input
+												input(type='text', placeholder='Zip/Postal Code')
+								
+							section.line-items.cell.margin-t2
+								h2 Add Line Items by:
+								.table
+									.table-switcher.margin-t2.margin-b2
+										.ui.buttons
+											button.ui.button.active.black 
+												i.check.icon
+												|  Pallet SKU
+											button.ui.basic.secondary.disabled.button Pallet Type
+											button.ui.basic.secondary.disabled.button Custom
+
+									.table-wrapper.scroll-x
+											table.ui.celled.unstackable.table
+												thead
+													tr
+														th #
+														th Pallet SKU
+														th Description
+														th QTY
+														th Price
+														th Amount
+												tbody
+													tr
+														td(data-label='Line') 1
+														td(data-label='PLT_SKU') PLT-0249
+														td(data-label='Desc') Groceries
+														td(data-label='Qty') 1
+														td(data-label='Amount') $980
+														td(data-label='Price') $980
+														
+													tr
+														td(data-label='Line') 2
+														td(data-label='PLT_SKU') PLT-0287
+														td(data-label='Desc') General Merch
+														td(data-label='Qty') 1
+														td(data-label='Price') $1240
+														td(data-label='Amount') $1240
+														
+													tr
+														td(data-label='Line')
+															a(href="#"): i.fas.fa-plus-circle
+														td(data-label='PLT_SKU') 
+														td(data-label='Desc') 
+														td(data-label='Qty')
+														td(data-label='Price') 
+														td(data-label='Amount') 		
+								.actions.margin-t2
+									button.ui.large.positive.button
+										i.check.icon
+										|     Save
+								.errors.margin-t1
+									.ui.red.compact.message
+										p
+											strong
+												| Error: 
+											| Please specify a customer.
+
+
+
+					
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+	script(src='semantic/dist/semantic.min.js')
+	script(src='semantic/dist/fa/js/all.js')
+	script(type='text/javascript').
+		$(document).ready(function(){
+			$('.trigger').click(function(){
+				$('.ui.modal')
+					.modal('show')
+				;
+			});
+		});

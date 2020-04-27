@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Stock UI</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/fa/all.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/skin-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/AdminLTE.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/xy-grid.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/ben.css">
+  </head>
+  <body>
+    <header class="main-header-mob ui grid vertically padded mobile only">
+      <div class="column six wide"></div>
+      <div class="column four wide center aligned"><span class="ui white" href="#">B-STOCK APP</span></div>
+      <div class="column six wide">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu"><a class="ui dropdown" role="listbox" aria-expanded="true"><i class="user icon"></i>
+              <div class="left menu transition">
+                <div class="disabled item" style="pointer-events:all" role="option" aria-disabled="true" aria-checked="false" aria-selected="false"><span class="text">Signed in as <strong>Grocery User</strong></span></div>
+                <div class="selected item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="true"><span class="text">Integrations</span></div>
+                <div class="item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="false"><span class="text">Help</span></div>
+                <div class="item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="false"><span class="text">Settings</span></div>
+                <div class="item" style="pointer-events:all" role="option" aria-checked="false" aria-selected="false"><span class="text">Sign Out</span></div>
+              </div></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="grid-x">
+      <div class="aside cell shrink hide-for-small-only">
+        <div class="b-sidebar">
+          <h2>Sidebar</h2>
+        </div>
+      </div>
+      <main class="cell auto" style="background: #ecf0f5;">
+        <div class="content">
+          <section class="new-orders grid-x">
+            <div class="order-summary cell small-12 medium-12 large-shrink">
+              <h2 class="margin-b2">New Order</h2>
+              <div class="ui form">
+                <div class="field error">
+                  <label>Order Type</label>
+                  <div class="ui large search dropdown selection">
+                    <select>
+                      <option value="">State</option>
+                    </select><i class="dropdown icon"></i>
+                    <input class="search" autocomplete="off" tabindex="0">
+                    <div class="text">Transfer Order</div>
+                    <div class="menu transition hidden" tabindex="-1">
+                      <div class="item active selected" data-value="">Transfer Order</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Customer</label>
+                  <div class="ui large search dropdown selection">
+                    <select>
+                      <option value="">State</option>
+                    </select><i class="dropdown icon"></i>
+                    <input class="search" autocomplete="off" tabindex="0">
+                    <div class="text">Acme Wholesale</div>
+                    <div class="menu transition hidden" tabindex="-1">
+                      <div class="item active selected" data-value="">Transfer Order</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field"><a href="#"> <i class="fas fa-plus-circle"></i> Create Customer</a></div>
+                <div class="field">
+                  <label>Customer PO #</label>
+                  <input placeholder="123456" type="text">
+                </div>
+                <div class="field">
+                  <label>Terms</label>
+                  <div class="ui large search dropdown selection">
+                    <select>
+                      <option value="">Custom</option>
+                    </select><i class="dropdown icon"></i>
+                    <input class="search" autocomplete="off" tabindex="0">
+                    <div class="text">Custom</div>
+                    <div class="menu transition hidden" tabindex="-1">
+                      <div class="item active selected" data-value="">12 Days</div>
+                    </div>
+                  </div>
+                  <div class="custom-terms grid-x field align-middle">
+                    <div class="cell auto align-middle">
+                      <label>Custom Term Days</label>
+                    </div>
+                    <div class="cell shrink">
+                      <input class="custom-terms-input" type="number" placeholder="1" width="48">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Invoice Date</label>
+                    <div class="ui left icon input">
+                      <input type="text" placeholder="Choose Date..."><i class="calendar icon"></i>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Due Date</label>
+                    <div class="ui left icon input">
+                      <input type="text" placeholder="Choose Date..."><i class="calendar icon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-content cell small-12 medium-12 large-auto grid-x grid-padding-x">
+              <div class="cell small-12 medium-12 large-6">
+                <div class="billing ui form">
+                  <div class="field">
+                    <h4>Billing Address</h4>
+                  </div>
+                  <div class="field">
+                    <div class="ui input">
+                      <input type="text" placeholder="Billing Name">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui input">
+                      <input type="text" placeholder="Street and Number">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui input">
+                      <input type="text" placeholder="Apartment, suite, building, floor, etc.">
+                    </div>
+                  </div>
+                  <div class="two fields">
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="Country">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="State/Province">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="two fields">
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="City/Town">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="Zip/Postal Code">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell small-12 medium-12 large-6">
+                <div class="billing ui form">
+                  <div class="field">
+                    <h4>Shipping Address</h4>
+                  </div>
+                  <div class="field">
+                    <div class="ui input">
+                      <input type="text" placeholder="Shipping Name">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui input">
+                      <input type="text" placeholder="Street and Number">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui input">
+                      <input type="text" placeholder="Apartment, suite, building, floor, etc.">
+                    </div>
+                  </div>
+                  <div class="two fields">
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="Country">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="State/Province">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="two fields">
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="City/Town">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui input">
+                        <input type="text" placeholder="Zip/Postal Code">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="line-items cell margin-t2">
+                <h2>Add Line Items by:</h2>
+                <div class="table">
+                  <div class="table-switcher margin-t2 margin-b2">
+                    <div class="ui buttons">
+                      <button class="ui button active black"> <i class="check icon"></i> Pallet SKU</button>
+                      <button class="ui basic secondary disabled button">Pallet Type</button>
+                      <button class="ui basic secondary disabled button">Custom</button>
+                    </div>
+                  </div>
+                  <div class="table-wrapper scroll-x">
+                    <table class="ui celled unstackable table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Pallet SKU</th>
+                          <th>Description</th>
+                          <th>QTY</th>
+                          <th>Price</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Line">1</td>
+                          <td data-label="PLT_SKU">PLT-0249</td>
+                          <td data-label="Desc">Groceries</td>
+                          <td data-label="Qty">1</td>
+                          <td data-label="Amount">$980</td>
+                          <td data-label="Price">$980</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Line">2</td>
+                          <td data-label="PLT_SKU">PLT-0287</td>
+                          <td data-label="Desc">General Merch</td>
+                          <td data-label="Qty">1</td>
+                          <td data-label="Price">$1240</td>
+                          <td data-label="Amount">$1240</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Line"><a href="#"><i class="fas fa-plus-circle"></i></a></td>
+                          <td data-label="PLT_SKU"> </td>
+                          <td data-label="Desc"> </td>
+                          <td data-label="Qty"></td>
+                          <td data-label="Price"> </td>
+                          <td data-label="Amount">		</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="actions margin-t2">
+                  <button class="ui large positive button"><i class="check icon"></i>    Save</button>
+                </div>
+                <div class="errors margin-t1">
+                  <div class="ui red compact message">
+                    <p><strong>Error: </strong>Please specify a customer.</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="semantic/dist/fa/js/all.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    	$('.trigger').click(function(){
+    		$('.ui.modal')
+    			.modal('show')
+    		;
+    	});
+    });
+  </script>
+</html>

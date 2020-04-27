@@ -211,6 +211,10 @@ input::selection {
 
 // Helpers
 
+.scroll-x {
+  overflow-x: auto;
+}
+
 .margin-r-half {
 	margin-right: 0.5rem;
 }
@@ -329,6 +333,12 @@ body {
       color: white;
     }
   }
+}
+
+.b-sidebar {
+  width: 230px;
+  background: #222D32;
+  height: 100%;
 }
 
 // CUSTOM ELEMENTS
@@ -478,4 +488,28 @@ body {
 
 .thin-scroll::-webkit-scrollbar {
     width: 6px;
+}
+
+// ORDERS
+
+.order-summary {
+  padding: 2rem 2rem 2rem 2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background: white;
+  min-height: 100vh;
+  min-width: 280px;
+}
+
+.order-content {
+  padding: 1rem;
+  max-width: 1440px;
+}
+
+.custom-terms {
+  padding-top: 1rem;
+
+  .custom-terms-input {
+    width: 8ch !important;
+  }
 }
